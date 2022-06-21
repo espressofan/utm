@@ -1,0 +1,40 @@
+   <h1 class="page-header">UTM Creator</h1>
+
+                <script type="text/javascript" src="embed.js"></script>
+                <div class="container">
+                    <div class="jumbotron">
+
+                        <form>
+                            <div class="form-group">
+                                <!-- onkeyup triggers the call! remove to kill flash -->
+                                <input type="url" onkeyup="addNumbers()" id="baseInput" placeholder="Destination URL" class="form-control form-control-lg">
+                                <br/>
+                                <input type="text" onkeyup="addNumbers()" id="sourceInput" placeholder="UTM Source" class="form-control form-control-lg">
+                                <br/>
+                                <input type="text" onkeyup="addNumbers()" id="mediumInput" placeholder="UTM Medium" class="form-control form-control-lg">
+                                <br/>
+                                <input type="text" onkeyup="addNumbers()" id="idInput" placeholder="Campaign ID (UTM ID)" class="form-control form-control-lg">
+                                <br/>
+                                <input type="text" onkeyup="addNumbers()" id="campaignInput" placeholder="Campaign Name (UTM Campaign)" class="form-control form-control-lg">
+                                <br/>
+                                <input type="text" onkeyup="addNumbers()" id="termInput" placeholder="UTM Term" class="form-control form-control-lg">
+                                <br/>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" onChange="addNumbers()" id="borderInput" class="form-check-input">
+                                    <label class="form-check-label" for="borderInput">Add https?</label>
+                                </div>
+                                <hr>
+
+                                <div class="form-group">
+                                    <label for="output3">UTM'd URL</label>
+                                    <textarea class="form-control rounded-0" rows="4" id="output3" disabled style="background: white;"></textarea>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" onclick="copyThis()">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- end utm content container -->
